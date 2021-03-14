@@ -134,3 +134,10 @@ gulp.task("default", ["browser-sync"], function () {
         gulp.start("images", reload);
     });
 });
+
+gulp.task("build", [], function () {
+    gulp.start("html", reload);
+    gulp.start('css', reload);
+    gulp.start("js", reload);
+    gulp.start("images", reload);
+});
