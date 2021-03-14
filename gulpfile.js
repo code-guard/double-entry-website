@@ -28,7 +28,7 @@ var gulp                    = require("gulp"),
     browserSync             = require("browser-sync"),
     reload                  = browserSync.reload;
 
-gulp.task("build", [], function () {
+//gulp.task("build", [], function () {
 // Tasks
 // -------------------------------------------------------------------
 // Start server
@@ -135,4 +135,4 @@ gulp.task("build", [], function () {
             gulp.start("images", reload);
         });
     });
-});
+//});
