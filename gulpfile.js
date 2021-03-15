@@ -111,6 +111,14 @@ gulp.task("favicon", function() {
         .pipe(gulp.dest("dist/"));
 });
 
+gulp.task("raw", function() {
+    return gulp.src("src/raw/*")
+        // Prevent gulp.watch from crashing
+        .pipe(plumber(onError))
+        // Where to store the finalized JS
+        .pipe(gulp.dest("dist/"));
+});
+
 // Image task
 gulp.task("images", function() {
     return gulp.src("src/img/**/*.+(png|jpeg|jpg|gif|svg)")
@@ -149,4 +157,5 @@ gulp.task("build", [], function () {
     gulp.start("js", reload);
     gulp.start("images", reload);
     gulp.start("favicon", reload);
+    gulp.start("raw", reload);
 });
