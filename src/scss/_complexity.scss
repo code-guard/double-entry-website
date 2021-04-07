@@ -1,0 +1,16 @@
+.complexity {
+    width: 100%;
+    text-align: center;
+
+    span {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border: 1px solid #9bccbb;
+        margin: 0 2px;
+    }
+
+    .filled {
+        background: #9bccbb;
+    }
+}

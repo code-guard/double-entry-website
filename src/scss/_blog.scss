@@ -1,0 +1,55 @@
+.blog {
+    font-size: 1rem;
+
+    .cta {
+        font-size: 1.4rem;
+        line-height: initial;
+    }
+}
+
+.landing-page {
+    font-size: 1rem;
+
+    @media screen and (min-width: $breakpoint--sm) {
+        font-size: 1.4rem;
+    }
+}
+
+.index-badge {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+
+    > span {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background: $green;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.index-badge-side {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: $green;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.exc-screenshot {
+    margin: 30px 0;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .25);
+    border-radius: 3px;
+}
+
+.info-box {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #9bccbb;
+    background: rgba(155, 204, 187, .1);
+}

@@ -12,10 +12,6 @@ html {
     font-weight: $font-weight--base; // [2]
     min-height: 100%; // Ensure the page always fills at least the entire height of the viewport
     -webkit-tap-highlight-color: rgba(0,0,0,0); // [3]
-
-    @media screen and (min-width: $breakpoint--sm) {
-        font-size: $font-size--desktop;
-    }
 }
 
 *, *:before, *:after { box-sizing: inherit; } // [4]
