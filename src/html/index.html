@@ -62,11 +62,6 @@
                 </div>
             </div>
 
-            @@include("partials/blog-info-box.html", {
-                "hidden2": "hidden",
-                "hidden3": "hidden",
-            })
-
             <div class="grid-column span-half pt3 pb3 mobile-m order-9 reveal-on-scroll is-revealing">
                 <div class="relative">
                     <img class="info-image relative z2" src="/img/print-export.jpg" alt="Cabin">
@@ -94,6 +89,12 @@
                 </a>
             </div>
         </section>
+
+        @@include("partials/blog-intro.html", {
+            "hidden2": "hidden",
+            "hidden3": "hidden",
+        })
+
     </div>
 
 @@include("partials/contact.html")
