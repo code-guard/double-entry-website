@@ -69,38 +69,27 @@
 
         <!-- Info -->
         <section class="grid-row grid-row--center">
-            <div class="info-box mb1">
-    <p> 
-        Benvenuto nel primo esercizio sviluppato dal Team di Partita Doppia! Qua sotto troverai il primo esercizio di una serie di casistiche di varia difficoltà. Cerca di risolvere gli esercizi da solo, se qualcosa ti sfugge non preoccuparti, puoi dare un’occhiata alla spiegazione per ogni punto dell’esercizio e confrontarla con la tua! 😉 <br>
-        Se cerchi qualcosa di più avvincente sfida te stesso⚔️, risolvi l'esercizio e confronta il risultato alla fine! 😎
-        
-    </p>
-    <p class="mt1" hidden>
-        <a href="/blog-esercizio-1.html" hidden>Esercizio 1<br></a>
-        <a href="/blog-esercizio-2.html" hidden>Esercizio 2<br></a>
-        <a href="/blog-esercizio-3.html" hidden>Esercizio 3</a>
-    </p>
-</div>
 
+<!--                "extra-classes": "mb1",-->
+<!--                "hidden1": "hidden",-->
+<!--                "hidden2": "hidden",-->
+<!--                "hidden3": "hidden",-->
+<!--            })-->
 
             <div class="complexity pt1 pb3">
                 <h3>Difficoltà</h3>
-                <div><span class="filled"></span><span></span><span></span><span></span><span></span></div>
+                <div><span class="filled"></span><span class="filled"></span><span></span><span></span><span></span></div>
             </div>
 
             <div class="pb3">
                 <h3 class="block align--center">Descrizione</h3>
                 <em>
-                    Nel corso del periodo 01.01.2021 – 31.12.2021 si svolgono le seguenti operazioni:<br>
-                    <strong>1.</strong> In data 14/5 si riceve la fattura relativa alla fornitura di merci per 4.500
-                    Euro + IVA al 22%. Il 15/5 si rendono all’impresa venditrice merci per 800 Euro in quanto difformi
-                    da quelle contrattate. In data 21/5 si riceve la nota di variazione per la merce resa.<br>
-                    <strong>2.</strong> 23/5 Sostenute in contanti spese di manutenzione ordinaria su impianti per Euro
-                    200 + IVA al 22%.<br>
-                    <strong>3.</strong> 25/5 Stipulato contratto di assicurazione contro il rischio di incendio e furto
-                    dello stabilimento industriale. Pagato contestualmente con assegno il premio di assicurazione annuo
-                    di Euro 6.000.<br>
-                    <strong>4.</strong> 30/5 Vendute merci per Euro 350 + IVA 22%. Regolamento per cassa l’1/6.<br>
+                    Nel corso del periodo 30.06.2021 – 07.07.2021 si svolgono le seguenti operazioni:<br>
+                    <strong>1.</strong> In data 30/06 si riceve bolletta telefonica mensile che evidenzia un imponibile Iva di euro 145 ed un importo Iva. Pagamento nei termini previsti a mezzo banca<br>
+                    <strong>2.</strong>  In data 30/06 01/07 si riceve ricevuta e pagata in contanti parcella professionale per euro 3.100, contributo cassa previdenza del 2%, al netto della ritenuta di acconto del 20%, che viene versata entro i termini di legge. <br>
+                    <strong>3.</strong> In data 05/07 si cquista un impianto per 1.600 + iva 352 euro. Regolamento per banca al ricevimento della fattura.
+                    <br>
+                    <strong>4.</strong> In data 07/07 si procede alla vendita di una vecchia attrezzatura per 1.000 + 220 di iva. L’attrezzatura era stata acquistata per 1.600 e ammortizzata per il 40%. L’incasso avviene per banca. <br>
                 </em>
             </div>
 
@@ -108,71 +97,50 @@
                     <h3 class="block align--center">Svolgimento</h3>
                 <h4>
                     <span class="index-badge"><span>1</span></span>
-                    In data 14/5 si riceve la fattura relativa alla fornitura di merci per 4.500 Euro + IVA al 22%. Il 15/5 si
-                    rendono all’impresa venditrice merci per 800 Euro in quanto difformi da quelle contrattate. In data
-                    21/5 si riceve la nota di variazione per la merce resa.
+                    In data 30/6 si riceve bolletta telefonica mensile che evidenzia un imponibile Iva di euro 145 ed un importo Iva. Pagamento nei termini previsti a mezzo banca.
                 </h4>
                 <p class="pb3">
-                    <img class="exc-screenshot" src="/img/blog/exc-1/1.jpg" alt="Passo 1">
-                    Si procede a registrare la fattura ricevuta. Poiché si tratta di un acquisto di merci, registriamo Merci
-                    c/acquisti in DARE (VEN) per 4.500, essendoci la variazione IVA, trattandosi di un acquisto registriamo IVA
-                    ns/credito in DARE (VFP) per 990 (4.500*22%), infine, registriamo il debito sorto con l’acquisto in AVERE
-                    Debiti v/fornitori (VFN) per 5.490 (4.500+990)
-                    <img class="exc-screenshot" src="/img/blog/exc-1/2.jpg" alt="Passo 2">
-                    Poiché abbiamo reso, all’impresa venditrice, le merci acquistate, registriamo la rettifica di costo, di IVA
-                    e di debito corrispondente. Innanzitutto, registriamo Resi su acquisti in AVERE poiché rettifica di costo
-                    (VEP) per 800, procediamo con la rettifica IVA quindi IVA ns credito in AVERE (VFN) per 218 (800*22%),
-                    infine registriamo la rettifica del debito con Debiti v/fornitori in DARE (VFP) per 1.018 (800+218).
+                    <img class="exc-screenshot" src="/img/blog/exc-2/1.jpg" alt="Passo 1">
+                    Si procede registrando il costo della bolletta telefonica con Spese telefoniche in DARE (VEN) per 145. poiché c’è anche la variazione IVA, registriamo IVA ns credito in DARE (VEP) per 32 (145*22%). Infine, registriamo il debito sorto a seguito del costo con Debiti v/fornitori in AVERE (VFN) per 177 (145+32).
+                    <img class="exc-screenshot" src="/img/blog/exc-2/2.jpg" alt="Passo 2">
+                    Poiché il debito sorto dalla bolletta viene saldato a mezzo banca, procediamo a registrare la rettifica del debito precedente con Debiti v/fornitori in DARE (VFP) per 177 e l’esborso di banca con Banca c/c in AVERE (VFN) per 177, ossia lo stesso importo del debito.
                 </p>
 
                 <h4>
                     <span class="index-badge"><span>2</span></span>
-                    23/5 Sostenute in contanti spese di manutenzione ordinaria su impianti per Euro 200 + IVA al 22%.
-                </h4>
+                    In data 30/06 01/07 si riceve ricevuta e pagata in contanti parcella professionale per euro 3.100, contributo cassa previdenza del 2%, al netto della ritenuta di acconto del 20%, che viene versata entro i termini di legge.                </h4>
                 <p class="pb3">
-                    <img class="exc-screenshot" src="/img/blog/exc-1/3.jpg" alt="Passo 3">
-                    Trattandosi di spese di manutenzione (costi), iniziamo registrando il costo in DARE con Manutenzioni e
-                    riparazioni in DARE (VEN) per 200, successivamente registriamo l’IVA dell’operazione con IVA ns credito
-                    (perché acquisto) in DARE (VFP) per 44 (200*22%), infine registriamo il debito sorto a seguito dell’acquisto
-                    con Debiti v/fornitori in AVERE (VFN) per 244 (200+44).
-                    <img class="exc-screenshot" src="/img/blog/exc-1/4.jpg" alt="Passo 4">
-                    Poiché si pagano in contanti le spese di manutenzione, registriamo la rettifica del debito in DARE (VFP) con
-                    Debiti v/fornitori per 244 e l’uscita di denaro con Denaro in cassa in AVERE (VFN) per l’importo
-                    corrispondente al debito ossia 244.
+                    <img class="exc-screenshot" src="/img/blog/exc-2/3.jpg" alt="Passo 3">
+                    Iniziamo registrando il costo della consulenza professionale con Consulenze professionali in DARE (VEN) per 3.162 (3100+(3100*2% (contributo cassa previdenziale))), registriamo poi l’IVA con IVA ns credito in DARE (VFP) per 696 (3162*22%), infine registriamo il debito con Debiti vs fornitori in AVERE (VFN) per 3.858 (3162+696).
+                    <img class="exc-screenshot" src="/img/blog/exc-2/4.jpg" alt="Passo 4">
+                    Poiché la parcella viene saldata in contanti, procediamo con la scrittura: si avrà Debiti v/fornitori in DARE (VFP) per 3.858; poiché c’è la ritenuta di acconto del 20%, l’esborso di cassa sarà con Denaro in cassa in AVERE (VFN) per 3.238 (3858-620 🡪 3100*20%=620), infine si avrà Erario c/ritenute da versare in AVERE (VFN) per 620 (3100*20%). 
+                    <img class="exc-screenshot" src="/img/blog/exc-2/5.jpg" alt="Passo 4">
+                    Dato che la ritenuta di acconto viene saldata, si avrà Erario c/ritenute in DARE (VFP) per 620 e banca c/c in AVERE (VFN) per 620.
                 </p>
 
                 <h4>
                     <span class="index-badge"><span>3</span></span>
-                    25/5 Stipulato contratto di assicurazione contro il rischio di incendio e furto dello stabilimento
-                    industriale. Pagato contestualmente con assegno il premio di assicurazione annuo di Euro 6.000.
+                    In data 05/07 si cquista un impianto per 1.600 + iva 352 euro. Regolamento per banca al ricevimento della fattura.
+
                 </h4>
                 <p class="pb3">
-                    <img class="exc-screenshot" src="/img/blog/exc-1/5.jpg" alt="Passo 5">
-                    Trattandosi di un costo assicurativo (quindi VEN), lo si registra contestualmente con la variazione
-                    finanziaria corrispondente: registriamo il costo con Premi assicurativi in DARE (VEN) e in AVERE il
-                    debito con Debiti v/fornitori (VFN), entrambi per l’importo del costo assicurativo ossia 6.000.
-                    <img class="exc-screenshot" src="/img/blog/exc-1/6.jpg" alt="Passo 6">
-                    Poiché c’è stato un esborso dal c/c, registriamo in DARE la rettifica del debito (VFP) per 6.000 con Debiti
-                    v/fornitori e l’uscita dal c/c in AVERE (VFN) con Banca c/c, sempre per 6.000.
+                    <img class="exc-screenshot" src="/img/blog/exc-2/6.jpg" alt="Passo 5">
+                    Poiché si tratta di un acquisto (costo) procediamo a registrarlo come un normale acquisto di merci o materie, pur trattandosi di un impianto. Innanzitutto, rileviamo il costo con Impianti in DARE (VEN) per 1.600, procediamo con rilevare l’IVA corrispondente con IVA ns credito in DARE (VFP) per 352 (1600*22%), infine rileviamo il debito sorto a seguito dell’acquisto con Debiti v/fornitori in AVERE (VFN) per 1.952 (1600+352).
+                    <img class="exc-screenshot" src="/img/blog/exc-2/7.jpg" alt="Passo 6">
+                    Poiché si salda la fattura a mezzo banca, procediamo alla registrazione del pagamento: si avrà Debiti v/fornitori in DARE (VFP) per 1.952 e Banca c/c in AVERE (VFN) per 1.952
+
                 </p>
 
                 <h4>
                     <span class="index-badge"><span>4</span></span>
-                    30/5 Vendute merci per Euro 350 + IVA 22%. Regolamento per cassa l’1/6.
+                    In data 07/07 si procede alla vendita di una vecchia attrezzatura per 1.000 + 220 di iva. L’attrezzatura era stata acquistata per 1.600 e ammortizzata per il 40%. L’incasso avviene per banca.
                 </h4>
                 <p>
-                    <img class="exc-screenshot" src="/img/blog/exc-1/7.jpg" alt="Passo 7">
-                    Trattandosi di una vendita si avranno variazioni di: ricavi, IVA e crediti. Registriamo prima la variazione
-                    corrispondente al ricavo derivante dalla vendita con Merci c/vendite in AVERE (VEP) per 350, registriamo poi
-                    la variazione di IVA riferita al ricavo di vendita con IVA ns debito in AVERE (VFN) per 77 (350*22%), infine
-                    registriamo il credito sorto dalla vendita con Crediti v/clienti in DARE (VFP) per 427 (350+77).
-                    <img class="exc-screenshot" src="/img/blog/exc-1/8.jpg" alt="Passo 8">
-                Poiché viene eseguito il saldo (pagamento) della fattura, registriamo l’entrata di cassa con Denaro in cassa in
-                    DARE (VFP) per l’importo totale del credito (quindi 427) e rettifichiamo il credito per lo stesso importo
-                    (427) con Crediti v/clienti in AVERE (VFN).
+                    <img class="exc-screenshot" src="/img/blog/exc-2/8.jpg" alt="Passo 7">
+                    Procediamo a stornare il valore dell’attrezzatura con Attrezzature in AVERE (VFN) per 1.600 (importo corrispondente al valore di acquisto), storniamo poi il fondo ammortamento per l’importo corrispondente al valore ammortizzato (40%) con Fondo amm.to attrezzature in AVERE (VFP) per 640 (1600*40%). Procediamo poi alla registrazione dell’IVA con IVA ns debito in AVERE (VFN) per 220 (1000*22%). Essendoci una plusvalenza, dato che il prezzo di vendita è > del valore contabile (1600-640), rileviamo Plusvalenze in AVERE (VEP) per 40 (1000-(1600-640)= 40). Infine, rileviamo l’incasso a mezzo banca per 1.220 (1000+220).
                 </p>
                 <div class="align--center mt4 mb4">
-                    <h3><a href="/assets/blog-esercizio-1.json" download>Scarica il progetto svolto ↗</a></h3>
+                    <h3><a href="/assets/blog-esercizio-2.json" download>Scarica il progetto svolto ↗</a></h3>
                     <em>Puoi utilizzare la funzionalità «importa progetto» dell'<a href="http://my.partitadoppia.app">app</a> per consultarlo.</em>
                 </div>
             </div>
