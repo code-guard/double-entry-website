@@ -1,3 +1,6 @@
 // Reveal on scroll
 // -------------------------------------------------------------------
 .is-revealing { visibility: hidden; }
+html {
+    scroll-behavior: smooth;
+}
