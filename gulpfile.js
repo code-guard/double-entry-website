@@ -94,14 +94,18 @@ gulp.task("css", function() {
 
 // JS task
 gulp.task("js", function() {
-    return gulp.src("src/js/**/*")
+    return gulp.src("src/html/ads.txt")
+        // Where to store the finalized JS
+        .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("ads", function(){
+    return gulp.src("src/img/favicon/*.+(ico|png|jpeg|jpg|gif|svg)")
         // Prevent gulp.watch from crashing
         .pipe(plumber(onError))
-        // Concatenate all JS files into one
-        .pipe(concat("production.js"))
         // Where to store the finalized JS
-        .pipe(gulp.dest("dist/js"));
-});
+        .pipe(gulp.dest("dist/"));
+})
 
 gulp.task("favicon", function() {
     return gulp.src("src/img/favicon/*.+(ico|png|jpeg|jpg|gif|svg)")
@@ -158,4 +162,5 @@ gulp.task("build", [], function () {
     gulp.start("images", reload);
     gulp.start("favicon", reload);
     gulp.start("assets", reload);
+    gulp.start("ads", reload);
 });
